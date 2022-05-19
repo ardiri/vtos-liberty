@@ -1,0 +1,368 @@
+//
+// @(#)resource.rcp
+//
+// Copyright 2000, Aaron Ardiri     (mailto:aaron@ardiri.com)
+//                 Michael Ethetton (mailto:methetton@gambitstudios.com)
+//                 Fredrik Nylund   (mailto:fnylund@hotmail.com)
+// All rights reserved.
+// 
+// This file was generated as part of the "liberty" program developed for 
+// the Helio Computing Platform designed by VTech Holdings:
+//
+//   http://www.vtechinfo.com/ 
+//
+// The  contents of this  file is confidential and proprietrary in nature 
+// ("Confidential Information").  Redistribution or modification  without 
+// prior consent of the original author(s) is prohibited.
+//
+// NOTE:
+// The following portions of code found within this source code file  are
+// owned  exclusively by  Michael Ethetton,  and shall  not be used in or
+// sold  to other projects  (internal or external)  without  the  written
+// permission of Michael Ethetton.
+//
+// - z-80 CPU Emulation
+// - Nintendo Gameboy Emulation System
+//
+// The following portions of code found within this source code file are
+// owned  exclusively  by  Aaron Ardiri,  and  shall  not be  used in or 
+// sold to  other projects  (internal or external)  without the  written 
+// permission of Aaron Ardiri.
+//
+// - GNU vtos application framework
+// - Help System
+//
+// The following portions of code found within this source code file are
+// owned  exclusively by Fredrik Nylund and Aaron Ardiri, and  shall not 
+// be used in or sold to  other projects  (internal or external) without
+// the written permission of one of the owners.
+//
+// - GameBoy(tm) ROM image memory management (desktop + handheld)
+//
+// It  shall be noted  that the Liberty  application was ported from the 
+// Palm Computing Platform version under sponsorship by VTech Holdings.
+//
+// --------
+// mainForm : resource definition
+// --------
+//
+#FORM
+NAME=mainForm
+ID=0
+~F0
+(B)OBJECT.TYPE=FORM
+~F1
+(SH)BOUNDS.X=0
+(SH)BOUNDS.Y=0
+(SH)BOUNDS.WIDTH=160
+(SH)BOUNDS.HEIGHT=160
+~F2
+(U)FOCUSED_OBJECT=9
+~F3
+(B)FORM_STYLE=NON_BITMAP_DIALOG
+~F4
+(S)FORM_TITLE=System Error
+~F5
+(SH)FORM_BITMAP.X=0
+(SH)FORM_BITMAP.Y=0
+(SH)FORM_BITMAP.WIDTH=12
+(SH)FORM_BITMAP.HEIGHT=12
+(P)FORM_BITMAP.FILE=Q_FOUR_BIT,images/icon.BMP
+~F6
+(U)NO_OF_OBJECTS=9
+~F7
+(U)OBJECT_ID=1
+(B)OBJECT_TYPE=BITMAP
+(U)OBJECT_ID=2
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=3
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=4
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=5
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=6
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=7
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=8
+(B)OBJECT_TYPE=STRING
+(U)OBJECT_ID=9
+(B)OBJECT_TYPE=CONTROL
+#END_FORM
+// 
+// -- bitmap: "application icon"
+//
+#BITMAP
+NAME=mainFormLibertyIcon
+ID=1
+~F0
+(B)OBJECT.TYPE=BITMAP
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=8
+(SH)BOUNDS.Y=18
+(SH)BOUNDS.WIDTH=48
+(SH)BOUNDS.HEIGHT=34
+~F3
+(B)BITAMP_STYLE=BITMAP_STYLE_1
+~F4
+(SH)BITMAP1_BITMAP.X=8
+(SH)BITMAP1_BITMAP.Y=18
+(SH)BITMAP1_BITMAP.WIDTH=48
+(SH)BITMAP1_BITMAP.HEIGHT=34
+(P)BITMAP1_BITMAP.FILE=Q_FOUR_BIT,images/gmbticon.BMP
+~F5
+(SH)BITMAP2_BITMAP.X=8
+(SH)BITMAP2_BITMAP.Y=18
+(SH)BITMAP2_BITMAP.WIDTH=48
+(SH)BITMAP2_BITMAP.HEIGHT=34
+(P)BITMAP2_BITMAP.FILE=Q_FOUR_BIT,images/gmbticon.BMP
+~F6
+(BO)BITMAP_ATTR.BITMAP_ENABLE=FALSE
+(BO)BITMAP_ATTR.BITMAP_ACTIVE=FALSE
+(BO)BITMAP_ATTR.BITMAP_VISIBLE=TRUE
+#END_BITMAP
+//
+// -- string: weblink string
+//
+#STRING
+NAME=mainFormWebLinkString
+ID=2
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=50
+(SH)BOUNDS.Y=24
+(SH)BOUNDS.WIDTH=100
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=http://gambitstudios.com/
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=SMALL_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: gameboy emulator
+//
+#STRING
+NAME=mainFormInfoString
+ID=3
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=50
+(SH)BOUNDS.Y=36
+(SH)BOUNDS.WIDTH=100
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=GameBoy Emulator
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=SMALL_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: error string #1
+//
+#STRING
+NAME=mainFormErrorString_1
+ID=4
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=6
+(SH)BOUNDS.Y=60
+(SH)BOUNDS.WIDTH=148
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=Unable to start emulation.
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=MEDIUM_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: error string #2
+//
+#STRING
+NAME=mainFormErrorString_2
+ID=5
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=6
+(SH)BOUNDS.Y=80
+(SH)BOUNDS.WIDTH=148
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=The system could not locate the Liberty
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=SMALL_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: error string #3
+//
+#STRING
+NAME=mainFormErrorString_3
+ID=6
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=6
+(SH)BOUNDS.Y=92
+(SH)BOUNDS.WIDTH=148
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=application, that must be installed on
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=SMALL_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: error string #4
+//
+#STRING
+NAME=mainFormErrorString_4
+ID=7
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=6
+(SH)BOUNDS.Y=104
+(SH)BOUNDS.WIDTH=148
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=the device in order to emulate this game
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=SMALL_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- string: error string #4
+//
+#STRING
+NAME=mainFormErrorString_4
+ID=7
+~F0
+(B)OBJECT.TYPE=STRING
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=6
+(SH)BOUNDS.Y=120
+(SH)BOUNDS.WIDTH=148
+(SH)BOUNDS.HEIGHT=9
+~F3
+(B)STRING_STYLE=STRING_STYLE_0
+~F4
+(S)STRING_TEXT=! SORRY !
+~F5
+(B)STRING_FONT_COLOR=COLOR_BLACK
+~F6
+(B)STRING_BACKGROUND_COLOR=COLOR_WHITE
+~F7
+(B)STRING_FONT=MEDIUM_FONT
+~F8
+(B)STRING_TEXTMENT=CENTRE
+~F9
+(BO)STRING_ATTR.STRING.VISIBLE=TRUE
+#END_STRING
+//
+// -- button: "OK" button
+//
+#CONTROL
+NAME=mainFormOkButton
+ID=9
+~F0
+(B)OBJECT.TYPE=CONTROL
+~F1
+(U)RELATED_TABLE_ID=65535
+~F2
+(SH)BOUNDS.X=58
+(SH)BOUNDS.Y=140
+(SH)BOUNDS.WIDTH=40
+(SH)BOUNDS.HEIGHT=13
+~F3
+(B)CONTROL_STYLE=BUTTON
+~F4
+(B)CONTROL_SUBYTPE=BUTTON_STYLE_1
+~F5
+(S)CONTROL_TEXT=OK
+~F6
+(B)TEXTMENT=CENTRE
+~F7
+(BO)CONTROL_ATTR.ENABLE=TRUE
+(BO)CONTROL_ATTR.ACTIVE=TRUE
+(BO)CONTROL_ATTR.VISIBLE=TRUE
+~F8
+(SH)CONTROL_ADD.RADIUS=2
+(B)CONTROL_ADD.COLOR_ON=COLOR_BLACK
+(B)CONTROL_ADD.COLOR_OFF=COLOR_WHITE
+#END_CONTROL
